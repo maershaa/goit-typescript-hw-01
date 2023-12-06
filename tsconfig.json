@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "allowJs": false, // Разрешает использование JavaScript файлов в проекте
+    "allowSyntheticDefaultImports": true, // Разрешает импорт синтетических значения по умолчанию
+    "emitDecoratorMetadata": true, // Включает метаданные декораторов для рефлексии
+    "esModuleInterop": true, // Включает поддержку импорта ES модулей в стиле CommonJS
+    "experimentalDecorators": true, // Включает экспериментальные декораторы TypeScript
+    "lib": ["dom", "ES2021"],
+
+    "module": "es2020", // Устанавливает формат модулей для компиляции TypeScript
+    "moduleResolution": "node", // Определяет алгоритм разрешения модулей (в данном случае Node.js)
+    "preserveConstEnums": true, // Сохраняет перечисления как константы после компиляции
+    "skipLibCheck": true, // Пропускает проверку библиотек типов при компиляции
+    "strictNullChecks": true, // Включает строгую проверку на null
+    "target": "es2019", // Устанавливает версию ECMAScript, на которую будет компилироваться TypeScript код
+    "sourceMap": true
+  },
+  "include": ["**/*.ts"] // Определяет список файлов для включения в процесс компиляции TypeScript
+}
